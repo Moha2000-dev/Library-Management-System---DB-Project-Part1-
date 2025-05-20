@@ -25,13 +25,13 @@ FROM Book
 WHERE Library_ID = 2;
 
 INSERT INTO Member (Name, Email, Phone, Membership_Start_Date)
-VALUES ('Your Name', 'your@email.com', '0000000000', GETDATE());
+VALUES ('mohammed', 'moha@gmail.com', '5168715', GETDATE());
 
 INSERT INTO Loan (Book_ID, Member_ID, Payment_ID, Loan_Date, Due_Date, Status)
 VALUES (2, 6, NULL, GETDATE(), DATEADD(DAY, 14, GETDATE()), 'Issued');
 
 INSERT INTO Member (Name, Email, Phone, Membership_Start_Date)
-VALUES ('Test Member', 'test@example.com', '999999999', GETDATE());
+VALUES ('Test Member', 'test@gmail.com', '9999999ti99', GETDATE());
 
 UPDATE Loan SET Return_Date = GETDATE()
 WHERE Member_ID = 405 AND Book_ID = 1011;
